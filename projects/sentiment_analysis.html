@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sentiment Analysis</title>
+        <link href="/css/styles.css" type="text/css"
+              rel="stylesheet"/>
+    </head>
+    <body>
+          <div class="sidebar">
+            
+            <div class="avatar">
+             <img src="/images/esstset.png" height="200" />
+            </div>
+            
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/kmarcott/">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+                
+                 <a href="https://github.com/kel-c-lm">
+                <ion-icon name="logo-github"></ion-icon>
+                </a>
+                
+                <a href="mailto:kel.c.791@gmail.com" target="_blank">
+                  <ion-icon name="mail"></ion-icon>
+                </a>
+
+            </div>
+             <a href="/index.html">Home</a>
+             <a href="/Res_Folder/resume_page.html">Resume</a>
+             <a href="/blog/blog_main.html">Blog</a>
+             <a href="/projects/projects_main.html">Projects</a>
+        </div>
+        
+            <div class="not-sidebar">
+                <div class="banner">
+                    <h1>Vader Sentiment Analysis on Half a Century of Music</h1>
+                </div>
+                <div class="content">
+                     <p>
+                         This was a fun project. This was probably the most data I've ever worked with, so it was a bit of a learning experience, but, like I said, a lot of fun overall. 
+                    </p>
+                    <p>
+                         It started as a project for a class at SF State that I undertook with a couple of classmates. We set out to analyze the sentiment of popular music over time, with "popular" being defined by Billboard. My role in the group was techincal lead, and so my job was less hypothesizing and more code-writing, but we made a couple of predictions about what we'd find, drawing heavily on the Pollyana hypothesis and <a href="https://www.researchgate.net/publication/263163589_Human_language_reveals_a_universal_positivity_bias">this paper</a> by Dodds et al.
+                    </p>
+                    <p>
+                         The project was a success, at least in terms of our grades, but I couldn't help but feeling we just didn't use enough data. So, once the semester was over and I had a little free time, I decided to revisit the project, with more data. 
+                    </p>
+                    <p>
+                         To get that data, I used <a href="https://www.johnwmillr.com/scraping-genius-lyrics/">LyricsGenius</a>, a fantastic tool that allows you to scrape lyrics from Genius. I wanted to get as much as I could, so I went all the way back to 1958, when Billboard began their top 100 list. 
+                    </p>
+                    
+                    <p>
+                         This took several hours. 
+                    </p>  
+                    <p>
+                         Once I had it though, I was extremely excited to get started. There were, however, a few small problems to be ironed out along the way. 
+                         One such problem was Angela's Ashes.
+                    </p>
+                    <p>
+                         To be entirely candid here, I'm still trying to figure out exactly what happened. Most of what I got back were lyrics, and, as far as I could see, most of them corresponded to the song they were supposed to correspond to, with a few notable exceptions (I'm not entirely positive, but I'm pretty sure Wu-Tang Clan were not recording in the 1960s). The really strange thing was, that out of about 29,000 lyrics entries that I got back, a few hundred of those were not lyrics at all, but were in fact the entire text of Angela's Ashes, the 1996 memoir by Frank McCourt. 
+                    </p>
+                    <p>
+                         This fact was stumbled on completely by accident, during a quick scroll through of the data. 
+                    </p>  
+                    <p>
+                         Angela's Ashes was not the only full-length book found in the data, unfortunately. Also found in the pile of lyrics was a Jane Austen novel, several entries from what appeared to be some kind of medical textbook, and part of a Batman script. 
+                    </p>
+                    <p>
+                         I've been taught in class how to clean data of stopwords and punctuation and the like, but I've never had to strip all instances of Angela's Ashes from a text before. This was a first. Deleting duplicate entries from the dataframe took care of Angela's Ashes and most of the other bogus entries, and deleting everything over a certain number of characters seemed to take care of the rest. 
+                    </p>
+                    <p>
+                         Once I had the data relatively clean and Frank-McCourt-Free, it was time for the fun part: the sentiment analysis. 
+                    </p>
+                    <p>
+                         For this part, I used <a href="https://github.com/cjhutto/vaderSentiment#about-the-scoring">VADER.</a>
+                    </p>
+                </div>
+            </div>
+        
+         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    </body>
+</html>
