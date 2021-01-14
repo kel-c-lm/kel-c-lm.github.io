@@ -34,9 +34,11 @@ img{
 }
 
 .not-sidebar{
-    margin-left: 400px;
+    margin-left: 25%;
     padding: 0px 10px;
-    padding-top: 50px;
+    font-size: 36px;
+    padding-top: 5%;
+    color: #f4b21e; 
 }
 
 .button{
@@ -58,4 +60,16 @@ img{
 
 .banner{
    
+}
+
+.salutations{
+    margin-left: 25%;
+    color: black;
+    font-size: 18px;
+}
+
+.about{
+    margin-left: 25%;
+    color: black;
+    font-size: 25px;
 }
