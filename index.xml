@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction</title>
+    <link>http://kel-c-lm.github.io/</link>
+    <description>Recent content on Introduction</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 May 2021 22:10:46 -0700</lastBuildDate><atom:link href="http://kel-c-lm.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Old English Meets New Technology</title>
+      <link>http://kel-c-lm.github.io/blog/old/</link>
+      <pubDate>Wed, 05 May 2021 22:10:46 -0700</pubDate>
+      
+      <guid>http://kel-c-lm.github.io/blog/old/</guid>
+      <description>Whenever I bring this project up to people they always respond with something along the lines of, “Old English…You mean, like Shakespeare?” I don’t, actually. Much as it may not seem that way to us, Shakespeare’s writing is actually an example of Early Modern English. “So, Chaucer?” Nope. Chaucer was Middle English. Think Beowulf. Just not the one with Angeline Jolie.
+Old English was spoken in gasp England between around 55 BC to around 1100 AD, and it wasn’t anything like the English you, I, Shakespeare or Chaucer speak.</description>
+    </item>
+    
+  </channel>
+</rss>
