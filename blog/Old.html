@@ -1,0 +1,29 @@
+---
+title: "Old"
+date: 2021-05-05T22:10:46-07:00
+draft: false
+---
+![Lancelot]
+(lancelot)
+Format: ![Alt Text](http://www.bl.uk/catalogues/illuminatedmanuscripts/ILLUMINBig.ASP?size=big&IllID=52489)
+
+
+	Whenever I bring this project up to people they always respond with something along the lines of, “Old English…You mean, like Shakespeare?” I don’t, actually. Much as it may not seem that way to us, Shakespeare’s writing is actually an example of Early Modern English. “So, Chaucer?” Nope. Chaucer was Middle English. Think Beowulf. Just not the one with Angeline Jolie. 
+	Old English was spoken in *gasp* England between around 55 BC to around 1100 AD, and it wasn’t anything like the English you, I, Shakespeare or Chaucer speak. It was a highly inflected language, making it closer to something like Modern German than Modern English. Old English had five cases, (nominative, accusative, dative, genitive, and instrumental), and three grammatical genders (masculine, feminine, and neuter). Modern English, which includes the variety spoken by Shakespeare, has only vestiges of this once very complicated case system in words like “him,” and the pretentiousness-modifier “whom.” 
+![whomst'd've]
+(whombear)
+	Considering the huge span of time and syntax that separate Modern English from Old English, and feeling quite sorry for Seamus Heaney, I thought it might be fun to experiment a little with machine aided translation of Old English. The first step on this journey was to find some Old English to translate.  
+	After careful consideration, I settled on “The Homilies of the Anglo-Saxon Church or Homilies of Ælfric.” There were a couple of factors motivating that choice. First, the text was long, largely uncorrupted, and, importantly, there is a digital edition, complete with parallel translation, freely available from [Project Gutenberg.](https://www.gutenberg.org/files/38334/38334-h/38334-h.htm) The parallel translations are important, because the next step was to line the source sentences (i.e. the Old English ones) up with the target sentences (i.e. the Modern English ones). A fairly direct, line-by-line translation is important for parallel machine translation. 
+	Once I had my data, it was time to create the model. This is the part where I admit that I followed a tutorial. The tutorial that I followed can be found [here](https://machinelearningmastery.com/develop-neural-machine-translation-system-keras/), and, if you’ve never explored Jason Brownlee’s website, it really has some wonderful, informative stuff. 
+	The model in the tutorial, and the one I used, is an encoder-decoder Long Short-Term Memory (LSTM) model. The input sequence (the source sentence) is embedded, and the output sequence (the target sentence) is one-hot encoded. The tutorial I followed uses Adam optimization, and I did the same, with the addition of a learning rate scheduler. 
+	![model]
+	(model.png)
+	For the sake of simplicity, and training time, so far, I’ve focused on only the simplest sentences in the homilies. This means that, so far, my dataset is laughably small. I’m talking a little over 300 sentence pairs in my testing data (which was 90% of the overall dataset). I trained the model for a couple hundred epochs (which was overkill), and I was able to achieve pretty high subjective accuracy. Behold, the results. 
+	![sentences]
+	(eval)
+	As might be expected, the model performed markedly better when translating function words rather than content words, for the simple reason that it saw far, far more function words than content words in my puny little dataset. Still, I’m not at all unhappy with the way this has worked so far. 
+	This is still a work in progress. One of the major problems that I’ve run into is with orthography, and it’s the reason I stuck to a single text rather than using several in conjunction. Old English spelling was all over the place, with variations sometimes occurring within the same text. This poses a problem, as each new variation will be treated as a distinct word by the model. Another problem that I ran into was the scarcity of available data. There is more digitized Old English out there than you might think, but relatively little of it is accompanied by line-by-line English translation, and when it is, it is largely poetry. Poetry is great, but I find that poets take a little too much creative license when it comes to their translations. Which is their prerogative. It does render Beowulf pretty much useless for these purposes, though. 
+	Recent advances have been made in non-parallel translation, and the folks over at MIT’s CSAIL have even used it to decipher lost languages. Although that seems more like witchcraft than anything else to me at this stage, it’s one possible avenue of further research in the pressing and urgent journey toward machine aided translation of Old English. 
+
+Bonus Language Fun Fact!
+The Y in the phrase 'Ye Olde' isn’t a Y. It’s a thorn (þ), pronounced as a soft ‘th,’ as ‘thorax.’ This makes it sound more similar to the familiar word ‘the’ and that’s because it is. It is the word ‘the.’ Over time, orthographically speaking, þ became indistinguishable from Y and was eventually replaced by the string TH. So, next time you see a sign for ‘ye olde tavern,’ you can amaze your friends with this fun little tidbit, and get uninvited to ye olde tavern. Go find some linguists to hang out with instead.  

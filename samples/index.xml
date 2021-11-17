@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Samples on Introduction</title>
+    <link>http://kel-c-lm.github.io/samples/</link>
+    <description>Recent content in Samples on Introduction</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://kel-c-lm.github.io/samples/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Formal Essay</title>
+      <link>http://kel-c-lm.github.io/samples/formalessay/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://kel-c-lm.github.io/samples/formalessay/</guid>
+      <description>This sample represents a formal essay, originally completed for a course at Aarhus University. The essay is done in APA style, and a sample of the first few pages can be found here.</description>
+    </item>
+    
+    <item>
+      <title>Help - What is a Gemfile?</title>
+      <link>http://kel-c-lm.github.io/samples/educative/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://kel-c-lm.github.io/samples/educative/</guid>
+      <description>This is a short reference piece that I contributed to Educative.io&amp;rsquo;s Edpresso series. Before writing this piece, my experience with Ruby had been limited; I therefore considered this a research challenge. After carefully reading through enough documentation to be sure that I understood the concepts, I was able to communicate them clearly, and concisely enough to fit into Educative&amp;rsquo;s short-form Edpresso format. The finished product can be seen here.</description>
+    </item>
+    
+    <item>
+      <title>User Guide - Basil Bookseller Software</title>
+      <link>http://kel-c-lm.github.io/samples/user-guide-basil-bookseller-software/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://kel-c-lm.github.io/samples/user-guide-basil-bookseller-software/</guid>
+      <description>During my time at Copperfield&amp;rsquo;s Books, I was asked to produce a document to facilitate the training of new employees. The document serves as a how-to guide, and covers receiving new shipments, both from vendors, and from other Copperfield&amp;rsquo;s locations, as well as vendor returns. It includes both quick start guides for easy reference, as well as detailed instructions for training purposes.
+The document was created in Microsoft Word, and was used successfully to train new hires, as well as to train current employees on new skills.</description>
+    </item>
+    
+    <item>
+      <title>Walk-Through - Simple Machine Translation</title>
+      <link>http://kel-c-lm.github.io/samples/translator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://kel-c-lm.github.io/samples/translator/</guid>
+      <description>My favorite project that I completed during my time at San Francisco State University was my capstone project in linguistics. The professor allowed us quite a bit of artistic license when it came to our write-ups, and we were able to largely define our own projects, as long as they met a certain set of criteria. I chose a project centered around machine learning; specifically machine translation. I assembled a corpus, created a model, and presented my work in an interactive write-up in the form of a Google CoLab notebook.</description>
+    </item>
+    
+  </channel>
+</rss>

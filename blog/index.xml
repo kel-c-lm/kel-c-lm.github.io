@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Introduction</title>
+    <link>http://kel-c-lm.github.io/blog/</link>
+    <description>Recent content in Blog on Introduction</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 May 2021 12:54:01 -0700</lastBuildDate><atom:link href="http://kel-c-lm.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Good UX: 10 Usability Heuristics</title>
+      <link>http://kel-c-lm.github.io/blog/uxone/</link>
+      <pubDate>Wed, 17 Nov 2021 12:52:35 +0100</pubDate>
+      
+      <guid>http://kel-c-lm.github.io/blog/uxone/</guid>
+      <description>Good UX can be hard to define, because there are no hard and fast rules that define good UX. A user&amp;rsquo;s experience is, after all, going to be highly dependent on the user, and one user&amp;rsquo;s tastes and preferences will almost certainly never match up exactly to another&amp;rsquo;s. Every user is different. That&amp;rsquo;s why it&amp;rsquo;s important to have a set of guiding principles, to inform your UX design.
+Luckily, we don&amp;rsquo;t have to start from scratch; such sets of guiding principles already exist.</description>
+    </item>
+    
+    <item>
+      <title>Old English Meets New Technology</title>
+      <link>http://kel-c-lm.github.io/blog/old/</link>
+      <pubDate>Wed, 05 May 2021 22:10:46 -0700</pubDate>
+      
+      <guid>http://kel-c-lm.github.io/blog/old/</guid>
+      <description>Whenever I bring this project up to people they always respond with something along the lines of, “Old English…You mean, like Shakespeare?” I don’t, actually. Much as it may not seem that way to us, Shakespeare’s writing is actually an example of Early Modern English. “So, Chaucer?” Nope. Chaucer was Middle English. Think Beowulf. Just not the one with Angeline Jolie.
+Old English was spoken in gasp England between around 55 BC to around 1100 AD, and it wasn’t anything like the English you, I, Shakespeare or Chaucer speak.</description>
+    </item>
+    
+  </channel>
+</rss>
